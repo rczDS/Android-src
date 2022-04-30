@@ -1,0 +1,23 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tablayout.tabFragment1">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/tabFragment_text1"-->
+<!--        android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+    <include layout="@layout/tab_fragment1_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="55dp"
+        android:contentDescription="@string/add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

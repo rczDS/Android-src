@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/returnarrow"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_returnarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-3dp"
+            android:layout_toEndOf="@+id/returnarrow"
+            android:gravity="center_vertical"
+            android:text="支付"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_more" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pay_menu"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/back_corner"
+        app:layout_constraintTop_toBottomOf="@id/top_panel"
+        tools:layout_editor_absoluteX="9dp">
+
+
+        <LinearLayout
+            android:layout_width="164dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#34a706"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_payandafford" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="20dp"
+                android:text="收付款"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="164dp"
+            android:layout_height="160dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/wallet"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#34a706"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_wallet" />
+
+            <TextView
+                android:id="@+id/textWallet"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:text="钱包"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textMoney"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="0dp"
+                android:text="$9.25"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/service_menu"
+        android:layout_width="match_parent"
+        android:layout_height="553dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/back_gradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/back_corner2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textservice0"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="腾讯服务"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="55dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service1"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_creditcard" />
+
+            <TextView
+                android:id="@+id/textservice1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="信用卡还款"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_toEndOf="@+id/layout1"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service2"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_service2" />
+
+            <TextView
+                android:id="@+id/textservice2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="手机充值"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_toEndOf="@+id/layout2"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service3"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_service3" />
+
+            <TextView
+                android:id="@+id/textservice3"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:text="理财通"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="210dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service4"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_service4" />
+
+            <TextView
+                android:id="@+id/textservice4"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:text="生活缴费"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/layout4"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="210dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service5"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_service5" />
+
+            <TextView
+                android:id="@+id/textservice5"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Q币充值"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/layout5"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="210dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service6"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_service6" />
+
+            <TextView
+                android:id="@+id/textservice6"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:text="城市服务"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="365dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/service7"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_corner3"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_service7" />
+
+            <TextView
+                android:id="@+id/textservice7"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="0dp"
+                android:text="腾旭公益"
+                android:textAlignment="center"
+                android:textColor="#808080"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="365dp"
+            android:background="@drawable/back_corner4"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

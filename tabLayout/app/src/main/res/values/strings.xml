@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">tabLayout</string>
+    <string name="fm1">动态浏览</string>
+    <string name="fm2">动态发布</string>
+    <string name="fm3">动态搜索</string>
+    <string name="fm4">个人信息</string>
+    <string name="item1">动态浏览</string>
+    <string name="item2">动态发布</string>
+    <string name="item3">动态搜索</string>
+    <string name="item4">个人信息</string>
+    <string name="tabFragment_text1">已关注人的动态</string>
+    <string name="tabFragment_text2">全部动态</string>
+    <string name="page2">动态发布页面</string>
+    <string name="page3">动态搜索页面</string>
+    <string name="page4">个人信息页面</string>
+    <string name="add">Add</string>
+    <string name="add_trend">发布动态</string>
+</resources>
