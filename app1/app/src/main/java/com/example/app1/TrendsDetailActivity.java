@@ -46,6 +46,7 @@ public class TrendsDetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(TrendsActivity.EXTRA_MESSAGE);
 
+
         // Put that message into the text_message TextView.
 //        TextView textView = findViewById(R.id.text_message);
 //        textView.setText(message);
